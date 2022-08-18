@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>COASTFASHION</td>
-            <td>06 Jul 2022, 13:01</td>
+            <td>18 Aug 2022, 19:39</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@regression</td>
-          <td      class="passed"    >12</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >5</td>
+          <td      class="failed"    >3</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">12</td>
 
-          <td  class="passed"    >4</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >3</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="45178944998">45.178</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="18492905539">18.492</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">8.834</span>
+  <span class="lead-duration duration">0.231</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Validate Login funtionality with invalid username and valid Password</span>
   
@@ -198,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
   <div class="inner-level hooks-element-before">
@@ -220,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">HooksClass.beforeScenario()</span>
                         
-  <span class="lead-duration duration">12.542</span>
+  <span class="lead-duration duration">8.951</span>
 
           </div>
 
@@ -236,7 +236,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">HooksClass.secondBefore()</span>
                         
-  <span class="lead-duration duration">4.380</span>
+  <span class="lead-duration duration">1.468</span>
 
           </div>
 
@@ -253,9 +253,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -265,14 +265,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
   <span class="name">User should pass invalid username<span class="argument">&quot;sharmi&quot;</span>  and valid Password<span class="argument">&quot;Sharmi@123&quot;</span></span>
   
-  <span class="lead-duration duration">0.667</span>
+  <span class="lead-duration duration">0.226</span>
 
 </div>
 
@@ -280,6 +280,47 @@ $(document).ready(function() {
 
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type='email'])[1]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'USER-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abb0b6e6c24006cbaefe9f7702b8b916, findElement {using=xpath, value=(//input[@type='email'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SHARMI~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51058}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51058/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: abb0b6e6c24006cbaefe9f7702b8b916
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at org.utilities.BaseClass.fill(BaseClass.java:88)
+	at org.stepdefinition.LoginStepDefinition.user_should_pass_invalid_username_and_valid_Password(LoginStepDefinition.java:95)
+	at &#10045;.User should pass invalid username&quot;sharmi&quot;  and valid Password&quot;Sharmi@123&quot;(file:src/test/resources/featureFiles/Login.feature:27)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -294,11 +335,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">User should click the login button</span>
   
-  <span class="lead-duration duration">0.210</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -320,11 +361,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">user should navigate to incorrect credential page</span>
   
-  <span class="lead-duration duration">7.956</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -351,7 +392,7 @@ $(document).ready(function() {
     
 
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -363,13 +404,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.thirdAfter(Scenario)</span>
                         
-  <span class="lead-duration duration">0.219</span>
+  <span class="lead-duration duration">1.156</span>
 
           </div>
 
@@ -385,7 +426,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.afterScnario(Scenario)</span>
                         
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.910</span>
 
           </div>
 
@@ -394,6 +435,21 @@ $(document).ready(function() {
           
                     
           
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1849690162.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1849690162.png">
+      </div>
+    </div>
+  </div>
+            </div>
   
         </div>
               <div class="hook">
@@ -401,7 +457,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.firstAfter()</span>
                         
-  <span class="lead-duration duration">0.352</span>
+  <span class="lead-duration duration">1.809</span>
 
           </div>
 
@@ -433,12 +489,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">13.666</span>
+  <span class="lead-duration duration">6.855</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Validate Login funtionality with invalid username and valid Password</span>
   
@@ -449,11 +505,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
     
 
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -465,13 +521,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">HooksClass.beforeScenario()</span>
                         
-  <span class="lead-duration duration">11.044</span>
+  <span class="lead-duration duration">9.846</span>
 
           </div>
 
@@ -487,7 +543,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">HooksClass.secondBefore()</span>
                         
-  <span class="lead-duration duration">7.827</span>
+  <span class="lead-duration duration">5.471</span>
 
           </div>
 
@@ -504,9 +560,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -516,14 +572,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">User should pass invalid username<span class="argument">&quot;saru@gmail.com&quot;</span>  and valid Password<span class="argument">&quot;Saru@i23&quot;</span></span>
   
-  <span class="lead-duration duration">0.431</span>
+  <span class="lead-duration duration">5.185</span>
 
 </div>
 
@@ -549,7 +605,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User should click the login button</span>
   
-  <span class="lead-duration duration">0.266</span>
+  <span class="lead-duration duration">0.249</span>
 
 </div>
 
@@ -571,11 +627,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Then</span>
   <span class="name">user should navigate to incorrect credential page</span>
   
-  <span class="lead-duration duration">12.967</span>
+  <span class="lead-duration duration">1.420</span>
 
 </div>
 
@@ -583,6 +639,46 @@ $(document).ready(function() {
 
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type='email'])[1]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'USER-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c58d6abd3eb17e5fe921a249899bd4b, findElement {using=xpath, value=(//input[@type='email'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SHARMI~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51167/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c58d6abd3eb17e5fe921a249899bd4b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.getAttribute(Unknown Source)
+	at org.stepdefinition.LoginStepDefinition.user_should_navigate_to_incorrect_credential_page(LoginStepDefinition.java:58)
+	at &#10045;.user should navigate to incorrect credential page(file:src/test/resources/featureFiles/Login.feature:29)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -602,7 +698,7 @@ $(document).ready(function() {
     
 
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -614,13 +710,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.thirdAfter(Scenario)</span>
                         
-  <span class="lead-duration duration">0.322</span>
+  <span class="lead-duration duration">0.884</span>
 
           </div>
 
@@ -636,7 +732,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.afterScnario(Scenario)</span>
                         
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.603</span>
 
           </div>
 
@@ -645,6 +741,21 @@ $(document).ready(function() {
           
                     
           
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1756600352.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1756600352.png">
+      </div>
+    </div>
+  </div>
+            </div>
   
         </div>
               <div class="hook">
@@ -652,7 +763,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.firstAfter()</span>
                         
-  <span class="lead-duration duration">0.308</span>
+  <span class="lead-duration duration">1.505</span>
 
           </div>
 
@@ -684,258 +795,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">10.175</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Validate Login funtionality with invalid username and valid Password</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-9" class="collapse collapsable-details ">
-    
-
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-10" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">HooksClass.beforeScenario()</span>
-                        
-  <span class="lead-duration duration">10.667</span>
-
-          </div>
-
-                      
-
-          
-                    
-          
-  
-        </div>
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">HooksClass.secondBefore()</span>
-                        
-  <span class="lead-duration duration">3.317</span>
-
-          </div>
-
-                      
-
-          
-                    
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User should pass invalid username<span class="argument">&quot;vijay@gmail.com&quot;</span>  and valid Password<span class="argument">&quot;Vijay@123&quot;</span></span>
-  
-  <span class="lead-duration duration">1.792</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User should click the login button</span>
-  
-  <span class="lead-duration duration">0.258</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user should navigate to incorrect credential page</span>
-  
-  <span class="lead-duration duration">8.124</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-        
-  
-        
-
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-12" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">HooksClass.thirdAfter(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.201</span>
-
-          </div>
-
-                      
-
-          
-                    
-          
-  
-        </div>
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">HooksClass.afterScnario(Scenario)</span>
-                        
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-                      
-
-          
-                    
-          
-  
-        </div>
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">HooksClass.firstAfter()</span>
-                        
-  <span class="lead-duration duration">2.143</span>
-
-          </div>
-
-                      
-
-          
-                    
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_2076810880.html">To validate the login functionality</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_2203492621.html">@sanity</a>
-           <a href="report-tag_233058432.html">@regression</a>
-      </div>
-
-  
-  <span class="lead-duration duration">12.501</span>
+  <span class="lead-duration duration">11.182</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -973,7 +833,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">HooksClass.beforeScenario()</span>
                         
-  <span class="lead-duration duration">8.637</span>
+  <span class="lead-duration duration">9.148</span>
 
           </div>
 
@@ -989,7 +849,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">HooksClass.secondBefore()</span>
                         
-  <span class="lead-duration duration">7.783</span>
+  <span class="lead-duration duration">3.263</span>
 
           </div>
 
@@ -1023,9 +883,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User should pass invalid username<span class="argument">&quot;jershi@gmail.com&quot;</span>  and valid Password<span class="argument">&quot;Jershi@123&quot;</span></span>
+  <span class="name">User should pass invalid username<span class="argument">&quot;vijay@gmail.com&quot;</span>  and valid Password<span class="argument">&quot;Vijay@123&quot;</span></span>
   
-  <span class="lead-duration duration">0.610</span>
+  <span class="lead-duration duration">1.637</span>
 
 </div>
 
@@ -1051,7 +911,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User should click the login button</span>
   
-  <span class="lead-duration duration">0.207</span>
+  <span class="lead-duration duration">0.221</span>
 
 </div>
 
@@ -1077,7 +937,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user should navigate to incorrect credential page</span>
   
-  <span class="lead-duration duration">11.683</span>
+  <span class="lead-duration duration">9.322</span>
 
 </div>
 
@@ -1122,7 +982,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.thirdAfter(Scenario)</span>
                         
-  <span class="lead-duration duration">0.234</span>
+  <span class="lead-duration duration">3.792</span>
 
           </div>
 
@@ -1154,7 +1014,314 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">HooksClass.firstAfter()</span>
                         
-  <span class="lead-duration duration">0.268</span>
+  <span class="lead-duration duration">1.248</span>
+
+          </div>
+
+                      
+
+          
+                    
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_2076810880.html">To validate the login functionality</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2203492621.html">@sanity</a>
+           <a href="report-tag_233058432.html">@regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.223</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate Login funtionality with invalid username and valid Password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details  in ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">HooksClass.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">14.133</span>
+
+          </div>
+
+                      
+
+          
+                    
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">HooksClass.secondBefore()</span>
+                        
+  <span class="lead-duration duration">1.372</span>
+
+          </div>
+
+                      
+
+          
+                    
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">User should pass invalid username<span class="argument">&quot;jershi@gmail.com&quot;</span>  and valid Password<span class="argument">&quot;Jershi@123&quot;</span></span>
+  
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type='email'])[1]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'USER-PC', ip: '192.168.1.4', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [187b27b7013e97a9f71e56ad47a934e8, findElement {using=xpath, value=(//input[@type='email'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SHARMI~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51477}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 187b27b7013e97a9f71e56ad47a934e8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at org.utilities.BaseClass.fill(BaseClass.java:88)
+	at org.stepdefinition.LoginStepDefinition.user_should_pass_invalid_username_and_valid_Password(LoginStepDefinition.java:95)
+	at &#10045;.User should pass invalid username&quot;jershi@gmail.com&quot;  and valid Password&quot;Jershi@123&quot;(file:src/test/resources/featureFiles/Login.feature:27)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should click the login button</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should navigate to incorrect credential page</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-21" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">HooksClass.thirdAfter(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.941</span>
+
+          </div>
+
+                      
+
+          
+                    
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">HooksClass.afterScnario(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.477</span>
+
+          </div>
+
+                      
+
+          
+                    
+          
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-22" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1849690162.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-22" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1849690162.png">
+      </div>
+    </div>
+  </div>
+            </div>
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">HooksClass.firstAfter()</span>
+                        
+  <span class="lead-duration duration">0.897</span>
 
           </div>
 
